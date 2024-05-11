@@ -1,0 +1,77 @@
+.gpt3__blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.gpt3__blog__heading {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+.gpt3__blog__heading h1 {
+  /* A lot is happening, We are blogging about it. */
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  margin-bottom: 4rem;
+}
+
+.gpt3__blog__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.gpt3__blog__container__GroupA {
+  flex: 1;
+  margin-right: 2rem;
+}
+.gpt3__blog__container__GroupB {
+  flex: 1;
+  margin-right: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (max-width: 990px) {
+
+
+  .gpt3__blog__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .gpt3__blog__heading h1{
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  }
+ 
+  .gpt3__blog__container__GroupA .gpt3__blog__container__article {
+    margin: 2rem 0rem;
+  }
+  .gpt3__blog__container .gpt3__blog__container__article__content h3 {
+  font-size: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .gpt3__blog__container__GroupB {
+    grid-template-columns: repeat(1, 1fr);
+}
+ 
+
+  .gpt3__blog__container__GroupA .gpt3__blog__container__article {
+    margin: 2rem 0rem;
+  }
+  .gpt3__blog__container .gpt3__blog__container__article__content h3 {
+  font-size: 15px;
+  }
+}
+
+
+ 

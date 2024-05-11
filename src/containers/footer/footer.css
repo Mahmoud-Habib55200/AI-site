@@ -1,0 +1,128 @@
+.gpt3__footer {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin: 2rem;
+  background-color: var(--color-footer);
+}
+
+.gpt3__footer__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 10rem;
+}
+
+.gpt3__footer__heading h1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 75px;
+  max-width: 550px;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+.gpt3__footer__heading button {
+  margin-top: 2rem;
+  padding: 20px 25px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid aqua;
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.gpt3__footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+
+}
+
+.gpt3__footer__content__image {
+  display: flex;
+  flex-direction: column;
+}
+
+.gpt3__footer__content__image img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.gpt3__footer__content__image p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #ffffff;
+  max-width: 200px;
+  text-align: left;
+}
+
+
+.gpt3__footer__content__links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+ 
+  font-family: var(--font-family);
+}
+ 
+
+.gpt3__footer__content__links ul li {
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.gpt3__footer__content__links ul  .parent {
+font-family: var(--font-family);
+font-weight: 700;
+margin-bottom: 2rem;
+}
+
+.gpt3__footer h2 {
+  text-align: center;
+font-family: var(--font-family);
+
+
+font-size: 12px;
+line-height: 14px;
+font-feature-settings: 'liga' off;
+margin-top: 5rem;
+margin-bottom: -2rem;
+
+color: #FFFFFF;
+
+
+}
+
+@media screen and (max-width: 500px) {
+ 
+.gpt3__footer__heading h1 {
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.gpt3__footer__content__image {
+  margin-bottom: 20px;
+
+}
+
+
+
+.gpt3__footer__content {
+  flex-direction: column ;
+
+}.gpt3__footer__content__links {
+border-bottom: 1px solid gray;
+width: 100%;
+margin-bottom: 10px;
+}
+} 
